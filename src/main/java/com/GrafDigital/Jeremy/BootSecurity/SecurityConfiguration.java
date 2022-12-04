@@ -21,13 +21,13 @@ public class SecurityConfiguration extends WebSecurityConfigurerAdapter {
     protected void configure(AuthenticationManagerBuilder auth) throws Exception {
         auth
                 .inMemoryAuthentication()
-                .withUser("admin")
-                .password(passwordEncoder().encode("123"))
-                .roles("ADMIN")
+                .withUser("admin").password(passwordEncoder().encode("123"))
+                .roles("ADMIN").authorities("ACCESS_TEST1", "ACCESS_TEST2")
                 .and()
-                .withUser("Jeremi")
-                .password(passwordEncoder().encode("1234"))
-                .roles("USER");
+                .withUser("Jeremi").password(passwordEncoder().encode("123")).roles("USER")
+                .and()
+                .withUser("manager").password(passwordEncoder().encode("123"))
+                .roles("MANAGER").authorities("ACCESS_TEST1");
     }
 
     // La deuxième méthode méthode configure va prendre en entré les requêtes HTTP avec (HttpSecurity en param qui correspond aux http)
@@ -35,8 +35,12 @@ public class SecurityConfiguration extends WebSecurityConfigurerAdapter {
     protected void configure(HttpSecurity http) throws Exception {
         http
                 .authorizeRequests()
-                .anyRequest()
-                .authenticated() // Toutes les requettes doivent etre identifier;
+                .antMatchers("/index.html").permitAll()
+                .antMatchers("/profile/**").authenticated()
+                .antMatchers("/admin/**").hasRole("ADMIN")
+                .antMatchers("/management/**").hasAnyRole("ADMIN", "MANAGER")// Toutes les requettes doivent etre identifier;
+                .antMatchers("/api/public/test1").hasAuthority("ACCESS_TEST1")
+                .antMatchers("/api/public/test2").hasAuthority("ACCESS_TEST2")
                 .and()
                 .httpBasic();
     }

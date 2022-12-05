@@ -4,7 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3ff54b18-0ea1-404b-be3c-62182fea0521" name="Changes" comment="" />
+    <list default="true" id="3ff54b18-0ea1-404b-be3c-62182fea0521" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/GrafDigital/Jeremy/BootSecurity/BootSecurityApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/GrafDigital/Jeremy/BootSecurity/BootSecurityApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/GrafDigital/Jeremy/BootSecurity/Controllers/PublicRestApiController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/GrafDigital/Jeremy/BootSecurity/Controllers/PublicRestApiController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/GrafDigital/Jeremy/BootSecurity/SecurityConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/GrafDigital/Jeremy/BootSecurity/Security/SecurityConfiguration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/GrafDigital/Jeremy/BootSecurity/BootSecurityApplication$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/GrafDigital/Jeremy/BootSecurity/BootSecurityApplication$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/GrafDigital/Jeremy/BootSecurity/BootSecurityApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/GrafDigital/Jeremy/BootSecurity/BootSecurityApplication.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/GrafDigital/Jeremy/BootSecurity/Controllers/PublicRestApiController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/GrafDigital/Jeremy/BootSecurity/Controllers/PublicRestApiController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/GrafDigital/Jeremy/BootSecurity/SecurityConfiguration.class" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -13,6 +22,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -31,18 +41,21 @@
     </option>
   </component>
   <component name="ProjectId" id="2ILrp0GcNykSDHYLztNwKJyeqj2" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "last_opened_file_path": "/Users/jeremikoloma/Downloads/SpringSecurtyBoot/src/main/resources",
-    "settings.editor.selected.configurable": "reference.settings.project.maven.repository.indices"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/jeremikoloma/Downloads/SpringSecurtyBoot/src/main/resources&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.project.maven.repository.indices&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/main/resources" />
@@ -54,7 +67,7 @@
       <module name="BootSecurity" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.GrafDigital.Jeremy.BootSecurity.*" />
+          <option name="PATTERN" value="com.GrafDigital.Jeremy.BootSecurity.Security.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -78,5 +91,16 @@
       <updated>1669971893352</updated>
     </task>
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>

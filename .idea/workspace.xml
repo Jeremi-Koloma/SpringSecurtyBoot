@@ -5,12 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3ff54b18-0ea1-404b-be3c-62182fea0521" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/dbnavigator.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/GrafDigital/Jeremy/BootSecurity/Security/SecurityConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/GrafDigital/Jeremy/BootSecurity/Security/SecurityConfiguration.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/templates/fragments.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/fragments.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/GrafDigital/Jeremy/BootSecurity/Repositories/DbInit.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/GrafDigital/Jeremy/BootSecurity/Repositories/DbInit.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/GrafDigital/Jeremy/BootSecurity/BootSecurityApplication$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/GrafDigital/Jeremy/BootSecurity/BootSecurityApplication$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/GrafDigital/Jeremy/BootSecurity/BootSecurityApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/GrafDigital/Jeremy/BootSecurity/BootSecurityApplication.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/GrafDigital/Jeremy/BootSecurity/Security/SecurityConfiguration.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/GrafDigital/Jeremy/BootSecurity/Security/SecurityConfiguration.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/GrafDigital/Jeremy/BootSecurity/SecurityConfiguration.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/fragments.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/fragments.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,6 +33,18 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="JpbToolWindowState">
+    <option name="myId2FirstActivated">
+      <map>
+        <entry key="com.haulmont.jpb.jpaStructure" value="true" />
+      </map>
+    </option>
+    <option name="myId2Visible">
+      <map>
+        <entry key="com.haulmont.jpb.jpaStructure" value="false" />
+      </map>
+    </option>
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -47,36 +64,15 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-<<<<<<< HEAD
-<<<<<<< HEAD
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
-=======
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "DefaultHtmlFileTemplate": "HTML File",
->>>>>>> Jeremi
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "last_opened_file_path": "/Users/jeremikoloma/Downloads/SpringSecurtyBoot/src/main/resources",
-    "settings.editor.selected.configurable": "reference.settings.project.maven.repository.indices"
-<<<<<<< HEAD
+    "settings.editor.selected.configurable": "Errors"
   }
 }]]></component>
-=======
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/jeremikoloma/Downloads/SpringSecurtyBoot/src/main/resources&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.project.maven.repository.indices&quot;
-  }
-}</component>
->>>>>>> Jeremi
-=======
-  }
-}]]></component>
->>>>>>> Jeremi
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/main/resources" />
@@ -85,7 +81,7 @@
   <component name="RunManager">
     <configuration name="BootSecurityApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.GrafDigital.Jeremy.BootSecurity.BootSecurityApplication" />
-      <module name="BootSecurity" />
+      <module name="SpringSecurtyBoot" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.GrafDigital.Jeremy.BootSecurity.Security.*" />

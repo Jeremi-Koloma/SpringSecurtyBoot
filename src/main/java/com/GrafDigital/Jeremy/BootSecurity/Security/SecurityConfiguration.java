@@ -25,7 +25,6 @@ public class SecurityConfiguration extends WebSecurityConfigurerAdapter {
     // La première méthode permetra d'utiliser les identifiants des utilisateurs vennant de la base de donnée;
     @Override
     protected void configure(AuthenticationManagerBuilder auth) throws Exception {
-<<<<<<< HEAD:src/main/java/com/GrafDigital/Jeremy/BootSecurity/SecurityConfiguration.java
         auth
                 .inMemoryAuthentication()
                 .withUser("admin").password(passwordEncoder().encode("123"))
@@ -35,9 +34,7 @@ public class SecurityConfiguration extends WebSecurityConfigurerAdapter {
                 .and()
                 .withUser("manager").password(passwordEncoder().encode("123"))
                 .roles("MANAGER").authorities("ACCESS_TEST1");
-=======
         auth.authenticationProvider(authenticationProvider());
->>>>>>> Jeremi:src/main/java/com/GrafDigital/Jeremy/BootSecurity/Security/SecurityConfiguration.java
     }
 
     // La deuxième méthode méthode configure va prendre en entré les requêtes HTTP avec (HttpSecurity en param qui correspond aux http)
@@ -51,10 +48,7 @@ public class SecurityConfiguration extends WebSecurityConfigurerAdapter {
                 .antMatchers("/management/**").hasAnyRole("ADMIN", "MANAGER")// Toutes les requettes doivent etre identifier;
                 .antMatchers("/api/public/test1").hasAuthority("ACCESS_TEST1")
                 .antMatchers("/api/public/test2").hasAuthority("ACCESS_TEST2")
-<<<<<<< HEAD:src/main/java/com/GrafDigital/Jeremy/BootSecurity/SecurityConfiguration.java
-=======
                 .antMatchers("/api/public/users").hasRole("ADMIN")
->>>>>>> Jeremi:src/main/java/com/GrafDigital/Jeremy/BootSecurity/Security/SecurityConfiguration.java
                 .and()
                 .formLogin()
                 .loginPage("/login").permitAll() // Tous le monde doit avoir accès à notre page login

@@ -25,15 +25,7 @@ public class SecurityConfiguration extends WebSecurityConfigurerAdapter {
     // La première méthode permetra d'utiliser les identifiants des utilisateurs vennant de la base de donnée;
     @Override
     protected void configure(AuthenticationManagerBuilder auth) throws Exception {
-        auth
-                .inMemoryAuthentication()
-                .withUser("admin").password(passwordEncoder().encode("123"))
-                .roles("ADMIN").authorities("ACCESS_TEST1", "ACCESS_TEST2")
-                .and()
-                .withUser("Jeremi").password(passwordEncoder().encode("123")).roles("USER")
-                .and()
-                .withUser("manager").password(passwordEncoder().encode("123"))
-                .roles("MANAGER").authorities("ACCESS_TEST1");
+        // Authentication Data Base
         auth.authenticationProvider(authenticationProvider());
     }
 
@@ -51,9 +43,14 @@ public class SecurityConfiguration extends WebSecurityConfigurerAdapter {
                 .antMatchers("/api/public/users").hasRole("ADMIN")
                 .and()
                 .formLogin()
+                .loginProcessingUrl("/signin") // Adapte a n'importe Formulaire Name Controls
                 .loginPage("/login").permitAll() // Tous le monde doit avoir accès à notre page login
+                .usernameParameter("txtUsername") // Notre formulaire login username
+                .passwordParameter("txtPassword") // Notre formulaire login password
                 .and()
-                .logout().logoutRequestMatcher(new AntPathRequestMatcher("/logout")).logoutSuccessUrl("/login"); // Deconnexion
+                .logout().logoutRequestMatcher(new AntPathRequestMatcher("/logout")).logoutSuccessUrl("/login")
+                .and()
+                .rememberMe().tokenValiditySeconds(2592000).key("monsecret!").rememberMeParameter("checkRememberMe"); // 30 days token validity
     }
 
 

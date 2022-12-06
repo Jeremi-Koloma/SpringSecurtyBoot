@@ -1,0 +1,14 @@
+    *{
+	margin: 0;
+	padding: 0;
+	box-sizing: 0;
+	text-decoration: none;
+}
+body{
+	font-family: 'Poppins',Roboto, sans-serif;
+	display: flex; /* Appel pour le centrage */
+    align-items: center; /* centrer verticalement */
+    justify-content: center; /* centrer Horizonta */
+    min-height: 100vh;
+    background:#efefef;
+}

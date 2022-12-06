@@ -51,11 +51,14 @@ public class SecurityConfiguration extends WebSecurityConfigurerAdapter {
                 .antMatchers("/api/public/users").hasRole("ADMIN")
                 .and()
                 .formLogin()
+                .loginProcessingUrl("/signin") // Adapte a n'importe Formulaire Name Controls
                 .loginPage("/login").permitAll() // Tous le monde doit avoir accès à notre page login
+                .usernameParameter("txtUsername") // Notre formulaire login username
+                .passwordParameter("txtPassword") // Notre formulaire login password
                 .and()
                 .logout().logoutRequestMatcher(new AntPathRequestMatcher("/logout")).logoutSuccessUrl("/login")
                 .and()
-                .rememberMe().tokenValiditySeconds(2592000).key("monsecret!"); // 30 days token validity
+                .rememberMe().tokenValiditySeconds(2592000).key("monsecret!").rememberMeParameter("checkRememberMe"); // 30 days token validity
     }
 
 

@@ -25,6 +25,15 @@ public class SecurityConfiguration extends WebSecurityConfigurerAdapter {
     // La première méthode permetra d'utiliser les identifiants des utilisateurs vennant de la base de donnée;
     @Override
     protected void configure(AuthenticationManagerBuilder auth) throws Exception {
+        auth
+                .inMemoryAuthentication()
+                .withUser("admin").password(passwordEncoder().encode("123"))
+                .roles("ADMIN").authorities("ACCESS_TEST1", "ACCESS_TEST2")
+                .and()
+                .withUser("Jeremi").password(passwordEncoder().encode("123")).roles("USER")
+                .and()
+                .withUser("manager").password(passwordEncoder().encode("123"))
+                .roles("MANAGER").authorities("ACCESS_TEST1");
         auth.authenticationProvider(authenticationProvider());
     }
 
